@@ -1,0 +1,168 @@
+@import "../utils/media";
+
+.carouselProyecto {
+    h5 {
+        font-size: 2rem;
+
+        @include movil() {
+            font-size: 0.1rem;
+        }
+
+        @include tablet() {}
+    }
+
+    p {
+        font-size: 1.5rem;
+
+        @include movil() {
+            font-size: 0.1rem;
+        }
+
+        @include tablet() {}
+    }
+}
+
+.carousel-item {
+    height: 45rem;
+
+    @include movil() {
+        height: 30rem;
+    }
+
+    @include tablet() {
+        height: 38rem;
+    }
+}
+
+.carouselImg {
+    height: 45rem;
+    width: auto;
+
+    @include movil() {
+        height: 30rem;
+    }
+
+    @include tablet() {
+        height: 38rem;
+    }
+}
+
+.imgBoots {
+    width: 10rem;
+    height: 10rem;
+    @include movil(){
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.txtA {
+    display: inline;
+    font-size: 2.5rem;
+    font-family: "Anton", serif;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+    @include movil(){
+        font-size: 1.7rem;
+    }
+}
+
+.carousel-indicators button {
+    color: map-get($colores, "negro");
+    border: none;
+}
+
+
+.carousel-indicators .active {
+    background-color: #FF5733;
+}
+
+.carousel-indicators button {
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+.carousel-indicators button:hover {
+    background-color: map-get($colores, "azul");
+}
+
+.flexcardsBoots {
+    display: flex;
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 2rem;
+    background-image: radial-gradient(black, rgb(179, 110, 31));
+
+    @include movil() {
+        padding: 0.5rem;
+        gap: 0.5rem;
+
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        height: 34rem;
+        padding: .625rem;
+        border: 2px solid rgb(161, 118, 25);
+        background-color: map-get($colores, "negro");
+
+        @include movil () {
+            width: 6rem;
+            height: 25rem;
+        }
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+        @include movil () {
+            width: 5.6rem;
+            height: 6rem
+        }
+
+    }
+
+    .cardT {
+        font-size: 2rem;
+        color: map-get($colores, "blanco");
+        font-weight: 400;
+        text-decoration: underline;
+
+        @include movil () {
+            font-size: 1rem;
+        }
+    }
+
+    .cardP {
+        font-size: 1.5rem;
+        color: map-get($colores, "blanco");
+        font-weight: 400;
+
+        @include movil () {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    a {
+        padding: 1rem;
+        font-size: 2rem;
+
+        @include movil () {
+            font-size: 1rem;
+        }
+    }
+
+}

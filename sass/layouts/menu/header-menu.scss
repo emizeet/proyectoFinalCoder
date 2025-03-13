@@ -1,0 +1,37 @@
+@import "../../utils/media";
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(black, rgb(179, 110, 31));
+    padding: 1rem;
+    margin: 0;
+    border-bottom: .25rem solid black;
+
+    img {
+        width: 12rem;
+        height: 12rem;
+        @include movil(){
+            width: 6rem;
+            height: 6rem;
+        }
+        @include tablet(){
+
+        }
+        @include desktop(){
+            
+        }
+    }
+    @include movil(){
+        
+    }
+    @include tablet(){
+
+    }
+    @include desktop(){
+        
+    }
+}

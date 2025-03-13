@@ -1,0 +1,585 @@
+@charset "UTF-8";
+.navindexBar {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(black, rgb(179, 110, 31));
+  padding: 1rem;
+  margin: 0;
+  gap: 4px;
+}
+.navindexBar img {
+  width: 10rem;
+  height: 10rem;
+  margin: 0;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .navindexBar img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navindexBar img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  .navindexBar img {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+a {
+  font-size: 3rem;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  a {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  a {
+    font-size: 3rem;
+  }
+}
+
+.mainindexGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "item1 item2" "item1 item3";
+  width: 100%;
+  height: 65rem;
+  place-items: center;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .mainindexGrid {
+    height: 40rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainindexGrid {
+    height: 45rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  .mainindexGrid {
+    height: 50rem;
+  }
+}
+.mainindexGrid .tituloIndex, .mainindexGrid .parrafoIndex {
+  font-size: 3rem;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0.625rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .mainindexGrid .tituloIndex, .mainindexGrid .parrafoIndex {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainindexGrid .tituloIndex, .mainindexGrid .parrafoIndex {
+    font-size: 2.3rem;
+    padding: 0.4rem;
+  }
+}
+.mainindexGrid .parrafoIndex {
+  text-decoration: none;
+  transform: translateY(-1rem);
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .mainindexGrid .parrafoIndex {
+    font-size: 1.3rem;
+    padding: 0.2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .mainindexGrid .parrafoIndex {
+    font-size: 2rem;
+    padding: 0.4rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  .mainindexGrid .parrafoIndex {
+    font-size: 2.5rem;
+    padding: 0.6rem;
+  }
+}
+.mainindexGrid .divIndexUno, .mainindexGrid .divIndexTres, .mainindexGrid .divIndexDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  grid-area: item1;
+  background-image: linear-gradient(black, rgb(179, 110, 31));
+}
+.mainindexGrid .divIndexDos {
+  grid-area: item2;
+  background-image: url(../assets/images/entrada.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.mainindexGrid .divIndexTres {
+  grid-area: item3;
+  background-image: url(../assets/images/salon1.jpeg);
+  background-size: 100% 100%;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.footerIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .footerIndex {
+    height: 100%;
+  }
+}
+.footerIndex .divFooter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "item1 item1 item1" "item2 item3 item4";
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .footerIndex .divFooter {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerIndex .divFooter {
+    padding: 3rem;
+    gap: 0.7rem;
+  }
+}
+.footerIndex .connect {
+  font-size: 5rem;
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-decoration: underline;
+  margin: 0;
+  text-align: center;
+  grid-area: item1;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .footerIndex .connect {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerIndex .connect {
+    font-size: 3rem;
+  }
+}
+.footerIndex .logoRedSocial, .footerIndex .logoRedTres, .footerIndex .logoRedDos {
+  width: 8rem;
+  height: 8rem;
+  grid-area: item2;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .footerIndex .logoRedSocial, .footerIndex .logoRedTres, .footerIndex .logoRedDos {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerIndex .logoRedSocial, .footerIndex .logoRedTres, .footerIndex .logoRedDos {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+.footerIndex .logoRedDos {
+  grid-area: item3;
+}
+.footerIndex .logoRedTres {
+  grid-area: item4;
+}
+.footerIndex .logoFooter {
+  width: 17rem;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .footerIndex .logoFooter {
+    width: 10rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footerIndex .logoFooter {
+    width: 14rem;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(black, rgb(179, 110, 31));
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 0.25rem solid black;
+}
+nav img {
+  width: 12rem;
+  height: 12rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  nav img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(2, 2fr);
+  background-image: radial-gradient(black, rgb(179, 110, 31));
+  gap: 3rem;
+  padding: 1rem;
+}
+.menuGrid div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 24rem;
+  background-color: brown;
+}
+.menuGrid div p {
+  color: white;
+  font-size: 5rem;
+  animation: fadeinout 3s infinite;
+  animation-delay: 1s;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .menuGrid div p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menuGrid div p {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  .menuGrid div p {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .menuGrid div {
+    width: 19rem;
+    height: 8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menuGrid div {
+    height: 12rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1328px) {
+  .menuGrid div {
+    height: 18rem;
+  }
+}
+.menuGrid .cardPrincipal {
+  background-image: url(../assets/images/pizza.jpg);
+}
+.menuGrid .cardUno {
+  background-image: url(../assets/images/sandwich.png);
+}
+.menuGrid .cardDos {
+  background-image: url(../assets/images/chucrut.png);
+}
+.menuGrid .cardTres {
+  background-image: url(../assets/images/hamburguesa.jpeg);
+}
+.menuGrid .cardCuatro {
+  background-image: url(../assets/images/papas.png);
+}
+.menuGrid .cardCinco {
+  background-image: url(../assets/images/ñoquetes.png);
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .menuGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menuGrid {
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-template-rows: repeat(3, 1.5fr);
+    gap: 1.5rem;
+  }
+}
+.carouselProyecto h5 {
+  font-size: 2rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .carouselProyecto h5 {
+    font-size: 0.1rem;
+  }
+}
+.carouselProyecto p {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .carouselProyecto p {
+    font-size: 0.1rem;
+  }
+}
+.carousel-item {
+  height: 45rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .carousel-item {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item {
+    height: 38rem;
+  }
+}
+
+.carouselImg {
+  height: 45rem;
+  width: auto;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .carouselImg {
+    height: 30rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carouselImg {
+    height: 38rem;
+  }
+}
+
+.imgBoots {
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .imgBoots {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.txtA {
+  display: inline;
+  font-size: 2.5rem;
+  font-family: "Anton", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  text-decoration: underline;
+  margin: 0;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .txtA {
+    font-size: 1.7rem;
+  }
+}
+
+.carousel-indicators button {
+  color: black;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #FF5733;
+}
+
+.carousel-indicators button {
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+
+.carousel-indicators button:hover {
+  background-color: blue;
+}
+
+.flexcardsBoots {
+  display: flex;
+  width: 100%;
+  height: 35rem;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding: 2rem;
+  background-image: radial-gradient(black, rgb(179, 110, 31));
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+}
+.flexcardsBoots div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 34rem;
+  padding: 0.625rem;
+  border: 2px solid rgb(161, 118, 25);
+  background-color: black;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots div {
+    width: 6rem;
+    height: 25rem;
+  }
+}
+.flexcardsBoots img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots img {
+    width: 5.6rem;
+    height: 6rem;
+  }
+}
+.flexcardsBoots .cardT {
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  text-decoration: underline;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots .cardT {
+    font-size: 1rem;
+  }
+}
+.flexcardsBoots .cardP {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots .cardP {
+    font-size: 0.8rem;
+  }
+}
+.flexcardsBoots a {
+  padding: 1rem;
+  font-size: 2rem;
+}
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .flexcardsBoots a {
+    font-size: 1rem;
+  }
+}
+
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+  background-image: radial-gradient(black, rgb(179, 110, 31));
+}
+.flexBox .cardFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  background-color: black;
+}
+.flexBox .h3Flex {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+.flexBox .imgFlex {
+  padding: 0.5rem;
+  width: 20rem;
+  height: 20.625rem;
+  transition: transform 0.3s ease;
+}
+.flexBox .imgFlex:hover {
+  transform: scale(1.5);
+}
+.flexBox .parrafFlex {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

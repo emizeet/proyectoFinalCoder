@@ -1,0 +1,48 @@
+@import "../../utils/media";
+.navindexBar {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(black, rgb(179, 110, 31));
+    padding: 1rem;
+    margin: 0;
+    gap: 4px;
+    img{
+        width: 10rem;
+        height: 10rem;
+        margin: 0;
+        @include movil(){
+            width: 4rem;
+            height: 4rem;
+        }
+        @include tablet(){
+            width: 10rem;
+            height: 10rem;
+        }
+        @include desktop(){
+            width: 12rem;
+            height: 12rem;
+        }
+    }
+    }
+    
+    a{
+        font-size: 3rem;
+        font-family: "Anton", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        text-decoration: none;
+        @include movil(){
+            font-size: 0.8rem;
+        }
+        @include tablet(){
+            font-size: 2.3rem;
+        }
+        @include desktop(){
+            font-size:3rem;
+        }
+    }

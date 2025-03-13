@@ -1,0 +1,89 @@
+@import "../../utils/media";
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    background-image: radial-gradient(black, rgb(179, 110, 31));
+    gap: 3rem;
+    padding: 1rem;
+    
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: 24rem;
+        background-color: map-get($colores, "marron");
+
+        p {
+            color: map-get($colores, "blanco" );
+            font-size: 5rem;
+            animation: fadeinout 3s infinite;
+            animation-delay: 1s;
+            @include movil(){
+                font-size: 1.5rem;
+            }
+            @include tablet(){
+                font-size: 4rem;
+            }
+            @include desktop(){
+                font-size: 5rem;
+            }
+        }
+        
+        @include movil(){
+            width: 19rem;
+            height: 8rem;
+        }
+        @include tablet(){
+            height: 12rem;
+        }
+        @include desktop(){
+            height: 18rem;
+        }
+    }
+
+    .cardPrincipal {
+        background-image: url(../assets/images/pizza.jpg);
+    }
+
+    .cardUno {
+        background-image: url(../assets/images/sandwich.png);
+    }
+
+    .cardDos {
+        background-image: url(../assets/images/chucrut.png);
+    }
+
+    .cardTres {
+        background-image: url(../assets/images/hamburguesa.jpeg);
+    }
+
+    .cardCuatro {
+        background-image: url(../assets/images/papas.png);
+    }
+
+    .cardCinco {
+        background-image: url(../assets/images/ñoquetes.png);
+    }
+    @include movil(){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    @include tablet(){
+        grid-template-columns: repeat(2, 1.5fr);
+        grid-template-rows: repeat(3, 1.5fr);
+        gap: 1.5rem;
+    }
+    @include desktop(){
+        
+    }
+}

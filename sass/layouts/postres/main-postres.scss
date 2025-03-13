@@ -1,0 +1,45 @@
+@import "../../utils/media";
+
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+    background-image: radial-gradient(black, rgb(179, 110, 31));
+
+    .cardFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 30rem;
+        background-color: black;
+    }
+
+    .h3Flex{
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .imgFlex{
+        padding: 0.5rem;
+        width: 20rem;
+        height: 20.625rem;
+        transition: transform 0.3s ease;
+    }
+
+    .imgFlex:hover {
+        transform: scale(1.5);
+    }
+
+    .parrafFlex{
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: white;
+    }
+}
